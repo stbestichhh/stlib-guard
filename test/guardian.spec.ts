@@ -18,6 +18,7 @@ describe('Guardian', () => {
   });
 
   test('useGuard should execute the callback', () => {
+    Guardian.setMetadata('testKey', 'testValue');
     const callback = jest.fn();
     const guard = new MetaGuard('testKey');
     Guardian.useGuard(guard, callback);

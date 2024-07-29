@@ -2,11 +2,13 @@
   "name": "@stlib/guard",
   "version": "1.0.0",
   "description": "Template repository with configurations for Node.js application with TypeScript",
-  "main": "src/index.ts",
+  "main": "dist/stguard.js",
+  "types": "stguard.d.ts",
   "repository": "https://github.com/stbestichhh/stlib-guard",
   "author": "Kiril Yakymchuk <stbestich@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc",
     "start": "ts-node src/index.ts",
     "start:dev": "nodemon src/index.ts",
@@ -17,6 +19,20 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "files": [
+    "dist",
+    "stguard.d.ts",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "Utils",
+    "Utilities",
+    "Lib",
+    "Livrary",
+    "Guard",
+  ],
   "devDependencies": {
     "@eslint/js": "^9.4.0",
     "@types/jest": "^29.5.12",

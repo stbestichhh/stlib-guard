@@ -1,4 +1,4 @@
-export abstract class Exception extends Error {
+export abstract class GuardException extends Error {
   abstract readonly code: number;
   readonly message: string;
   readonly name: string;

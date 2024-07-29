@@ -17,7 +17,7 @@ export class Guardian {
   public static useGuard(_guard: Guard, callback?: (...args: any[]) => void): void;
 }
 
-export abstract class Exception extends Error {
+export abstract class GuardException extends Error {
   abstract readonly code: number;
   readonly message: string;
   readonly name: string;

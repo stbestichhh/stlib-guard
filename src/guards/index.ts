@@ -1,2 +1,2 @@
 export * from './guard';
-export * from './meta.guard'
+export * from './meta.guard';

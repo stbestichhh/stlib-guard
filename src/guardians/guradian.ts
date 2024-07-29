@@ -11,7 +11,10 @@ export class Guardian {
     Guardian.metas.delete(key);
   }
 
-  public static useGuard(_guard: Guard, callback?: (...args: any[]) => void): void {
+  public static useGuard(
+    _guard: Guard,
+    callback?: (...args: any[]) => void,
+  ): void {
     if (callback) {
       callback();
     }

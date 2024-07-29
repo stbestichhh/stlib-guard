@@ -14,7 +14,10 @@ export class Guardian {
   public static readonly metas: Map<string, any> = new Map<string, any>();
   public static setMetadata(key: string, data: any): void;
   public static removeMetadata(key: string): void;
-  public static useGuard(_guard: Guard, callback?: (...args: any[]) => void): void;
+  public static useGuard(
+    _guard: Guard,
+    callback?: (...args: any[]) => void,
+  ): void;
 }
 
 export abstract class GuardException extends Error {

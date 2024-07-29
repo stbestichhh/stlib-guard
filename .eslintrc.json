@@ -23,6 +23,7 @@
         "varsIgnorePattern": "^_",
         "ignoreRestSiblings": true
       }
-    ]
+    ],
+    "@typescript-eslint/no-explicit-any": 0
   }
 }

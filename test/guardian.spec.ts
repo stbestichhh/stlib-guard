@@ -3,18 +3,18 @@ import { MetaGuard } from '../src/guards';
 
 describe('Guardian', () => {
   afterEach(() => {
-    Guardian.metas.clear();
+    Guardian.getMetas().clear();
   });
 
   test('setMetadata should add metadata to the map', () => {
     Guardian.setMetadata('testKey', 'testValue');
-    expect(Guardian.metas.get('testKey')).toBe('testValue');
+    expect(Guardian.getMetas().get('testKey')).toBe('testValue');
   });
 
   test('removeMetadata should remove metadata from the map', () => {
     Guardian.setMetadata('testKey', 'testValue');
     Guardian.removeMetadata('testKey');
-    expect(Guardian.metas.has('testKey')).toBe(false);
+    expect(Guardian.getMetas().has('testKey')).toBe(false);
   });
 
   test('useGuard should execute the callback', () => {

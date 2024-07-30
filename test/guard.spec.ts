@@ -8,7 +8,7 @@ describe('Guard', () => {
   });
 
   afterAll(() => {
-    Guardian.metas.clear();
+    Guardian.getMetas().clear();
   });
 
   class TestGuard extends Guard {
@@ -27,6 +27,6 @@ describe('Guard', () => {
   });
 
   test('getMetas should return the metas map', () => {
-    expect(Guard.getMetas()).toBe(Guardian.metas);
+    expect(Guard.getMetas()).toBe(Guardian.getMetas());
   });
 });

@@ -14,7 +14,7 @@ describe('MetaGuard', () => {
   });
 
   afterAll(() => {
-    Guardian.metas.clear();
+    Guardian.getMetas().clear();
   });
 
   test('MetaGuard constructor should call checkData', () => {

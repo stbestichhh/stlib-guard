@@ -1,6 +1,6 @@
 {
   "name": "@stlib/guard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Guardian library for node.js",
   "main": "dist/stguard.js",
   "types": "stguard.d.ts",

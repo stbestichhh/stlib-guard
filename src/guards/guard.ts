@@ -5,7 +5,7 @@ export abstract class Guard {
   private readonly metas: Map<string, any>;
 
   protected constructor(protected readonly metaKey: string) {
-    this.metas = Guardian.metas;
+    this.metas = Guardian.getMetas();
   }
 
   protected checkData() {
@@ -14,7 +14,7 @@ export abstract class Guard {
     }
   }
 
-  static getMetas() {
-    return Guardian.metas;
+  static getMetas(key?: string) {
+    return Guardian.getMetas(key);
   }
 }

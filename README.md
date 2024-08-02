@@ -56,7 +56,7 @@ Guardian.useGuard(new MetaGuard('Key'));
 Guardian.useGuard(new MetaGuard('NotExistingKey')); // Will throw MetaException
 
 // Also you can get all metas
-MetaGuard.getMetas();
+Guardian.getMetas();
 ```
 
 #### Creating your own Guards and Exceptions
